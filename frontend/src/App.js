@@ -9,7 +9,7 @@ const App = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post('https://application-nextjs-opal.vercel.app/bfhl', JSON.parse(jsonInput));
+      const res = await axios.post('https://application-nextjs-opal.vercel.app/api', JSON.parse(jsonInput));
       setResponse(res.data);
     } catch (error) {
       console.error('Error:', error);
