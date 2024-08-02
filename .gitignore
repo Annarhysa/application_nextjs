@@ -1,3 +1,4 @@
 backend/backend
 node_modules
 frontend/package-lock.json
+__pycache__
