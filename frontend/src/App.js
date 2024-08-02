@@ -9,7 +9,7 @@ const App = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post('https://your-vercel-backend-url/bfhl', JSON.parse(jsonInput));
+      const res = await axios.post('http://127.0.0.1:5000/bfhl', JSON.parse(jsonInput));
       setResponse(res.data);
     } catch (error) {
       console.error('Error:', error);
